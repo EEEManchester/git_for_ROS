@@ -18,6 +18,13 @@ git checkout carma #to move to the carma branch
 ```
 This may be followed by some setup steps/running some scripts, see below.
 
+But ultimately, once my src folder and other setup steps are completed:
+
+```bash
+cd ~/catkin_CARMA
+catkin_make
+```
+
 ## Submodules
 [Git-Tools-Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules)
 
