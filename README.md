@@ -69,5 +69,18 @@ git submodule add https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
 ## Config files, setup steps and .bashrc
 
 
-## Using branches
+## Using branches  - a simplified example workflow.
+
+[Branching and merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+
+```
+git branch new_feature
+git checkout new_feature
+git add -A #or a new set of files
+git commit -m 'add feature for ...' # we could look into using templates for commit messages
+git checkout master
+git merge new_feature
+git branch -d new_feature #If fast-forward merge was successful, may need a bit more caution if multiple people are working on master
+git push
+```
 
