@@ -2,4 +2,4 @@
 
 
 ## ROS in VSCode
-(ROS VSCode Extension)[https://marketplace.visualstudio.com/items?itemName=ms-iot.vscode-ros]
+[ROS VSCode Extension](https://marketplace.visualstudio.com/items?itemName=ms-iot.vscode-ros)
