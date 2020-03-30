@@ -68,6 +68,20 @@ git submodule add https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
 
 ## Config files, setup steps and .bashrc
 
+Using environmental variables in a setup script to change URDF configuration:
+
+```xml
+
+  <xacro:if value="$(optenv CARMA 0)">
+    <xacro:include filename="$(find custom_jackal_description)/urdf/carma/carma_urdf.xacro"/>
+  </xacro:if>
+
+  <xacro:if value="$(optenv TORONE 0)">
+    <xacro:include filename="$(find custom_jackal_description)/urdf/torone/torone_urdf.xacro" />
+  </xacro:if>
+```
+
+
 
 ## Using branches  - a simplified example workflow.
 
