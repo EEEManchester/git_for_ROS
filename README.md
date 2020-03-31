@@ -1,13 +1,13 @@
 # git_for_ROS
-example repo for how you might set up git for a catkin_ws in ROS 
+Example repo for how you might set up git for a catkin_ws in ROS 
 
-### Disclaimer ;) 
+### Disclaimer... 
 This is the way I have found useful, since I often use submodules, there are probably other and better ways to use Git with catkin_ws!
 
 ## Initialising the Git Repo
 
 I use the src folder as the location for my Git repository.
-I have made the repos for CARMA visible as an example.
+I have made the repos for the CARMA robot visible as an example.
 
 Then, if I want to clone the project onto a new machine (e.g., a new version of CARMA) I would do the following:
 
