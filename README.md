@@ -14,7 +14,7 @@ Then, if I want to clone the project onto a new machine (e.g., a new version of 
 ```bash
 mkdir ~/catkin_carma/
 cd ~/catkin_carma
-git clone --recursive https://github.com/EEEManchester/jackal_catkin_src.git #recursive is required for submodules - see below
+git clone --recursive https://github.com/EEEManchester/jackal_catkin_src.git ./src #recursive is required for submodules - see below, this command clones the repo into a folder called ./src
 git checkout carma #to move to the carma branch
 ```
 This may be followed by some setup steps/running some scripts, see below.
