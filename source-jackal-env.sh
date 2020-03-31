@@ -3,10 +3,12 @@
 # =========== ROS Config ===============
 source /opt/ros/kinetic/setup.bash
 source /home/administrator/catkin_ws/devel/setup.bash
-#source /home/administrator/cartographer_ws/devel/setup.bash
+#source /home/administrator/cartographer_ws/devel/setup.bash  #location of other catkin_ws
 
 #========== Export JACKAL_VARIABLES==============================================================
 
+export CARMA=1
+export GPS=1
 export JACKAL_PS4=1
 
 # ======= Terminal Config ==========
@@ -19,13 +21,10 @@ PS1='\[\e[1;35m\]administrator:\[\e[1;36m\]\d-\A\[\e[1;35m\]:\[\e[1;36m\]\w\[\e[
 
 # ========= ROS Config ==============
 
-export EDITOR="vim"
+export EDITOR="vim"  #nano, etc.
 
 export ROS_MASTER_URI=http://192.168.0.76:11311
 export ROS_IP=192.168.0.76
-
-#export ROS_MASTER_URI=http://$(ifconfig | awk '/inet addr/{print substr($2,6)}' | tail -n 1):11311
-#export ROS_IP=$(ifconfig | awk '/inet addr/{print substr($2,6)}' | tail -n 1)
 
 echo "ROS_MASTER_URI: "$ROS_MASTER_URI
 echo "ROS_IP: "$ROS_IP
@@ -39,8 +38,6 @@ carma2_wifi=192.168.0.220
 alias carma2_ps4='sudo ds4drv'
 alias carma2_ps4_test_gui='jstest-gtk /dev/input/js1'
 alias carma2_ps4_test='jstest /dev/input/js1'
-
-alias carma2_rviz='roslaunch carma_2_display carma2_rviz_ps4.launch'
 
 alias carma2_connect_eth='ssh administrator@$carma2_eth -X'
 alias carma2_connect_wifi='ssh administrator@$carma2_wifi -X'
