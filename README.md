@@ -7,7 +7,7 @@ This is the way I have found useful, since I often use submodules, there are pro
 ## Initialising the Git Repo
 
 I use the src folder as the location for my Git repository.
-I have made the repos for the CARMA robot visible as an example.
+I have made the repos for the CARMA robot visible as an example, see (CARMA repo)[https://github.com/EEEManchester/custom_jackal_description]
 
 Then, if I want to clone the project onto a new machine (e.g., a new version of CARMA) I would do the following:
 
