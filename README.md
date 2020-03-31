@@ -70,9 +70,10 @@ git submodule add https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
 
 ## Config files, setup steps and .bashrc
 
-Currently on the Jackal, a bash script is used to setup environmental variables, see file in this repo for full example.
+Currently on the Jackal, a bash script is used to setup environmental variables, see source-jackal-env.sh in this repo for full example.
 
 Using environmental variables in a setup script to change URDF configuration:
+For example, using environmental variables set in source-jackal-env.sh, we can change the configuration of the URDF for the robot:
 
 ```xml
 
