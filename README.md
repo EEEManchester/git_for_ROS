@@ -16,7 +16,8 @@ mkdir ~/catkin_carma/
 cd ~/catkin_carma
 git clone --recursive https://github.com/EEEManchester/jackal_catkin_src.git ./src #recursive is required for submodules - see below, this command clones the repo into a folder called ./src
 cd ./src
-git checkout carma  #to move to the carma branch  - might also be origin/carma tab a couple of times to see branches or run git branch -a
+git branch -a
+git checkout origin/carma  #to move to the carma branch  located at the remote
 ```
 This may be followed by some setup steps/running some scripts, see below.
 
@@ -61,13 +62,15 @@ This creates a file called .gitmodules, which might look something like this:
 	url = https://github.com/EEEManchester/custom_jackal_launch.git
 ```
 
-You can also use submodules to add code from public repos, but frozen at a specific commit. E.g., 
+You can also use submodules to add code from public repos e.g., 
 
 ```bash
 git submodule add https://github.com/tu-darmstadt-ros-pkg/hector_slam.git 
 ```
 
 ## Config files, setup steps and .bashrc
+
+Currently on the Jackal, a bash script is used to setup environmental variables, see file in this repo for full example.
 
 Using environmental variables in a setup script to change URDF configuration:
 
