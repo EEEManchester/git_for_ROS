@@ -12,8 +12,8 @@ I have made the repos for the CARMA robot visible as an example, see [CARMA repo
 Then, if I want to clone the project onto a new machine (e.g., a new version of CARMA) I would do the following:
 
 ```bash
-mkdir ~/catkin_CARMA/
-cd ~/catkin_CARMA
+mkdir ~/catkin_carma/
+cd ~/catkin_carma
 git clone --recursive https://github.com/EEEManchester/jackal_catkin_src.git #recursive is required for submodules - see below
 git checkout carma #to move to the carma branch
 ```
@@ -22,7 +22,7 @@ This may be followed by some setup steps/running some scripts, see below.
 But ultimately, once my src folder and other setup steps are completed:
 
 ```bash
-cd ~/catkin_CARMA
+cd ~/catkin_carma
 catkin_make
 ```
 
