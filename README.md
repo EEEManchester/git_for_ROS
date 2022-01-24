@@ -1,3 +1,6 @@
+# WARNING
+This README is out of date and we no longer recomend using submodules as the standard method for structuring your src folder. This repo needs updating.
+
 # git_for_ROS
 Example repo for how you might set up git for a catkin_ws in ROS 
 
